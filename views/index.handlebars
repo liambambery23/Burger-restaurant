@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="jumbotron text-center bg-primary">
+        <h1>Eat Da Burger!</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card border border-light">
+                <div class="card-header bg-primary">
+                    Order Here
+                </div>
+                <div class="card-body">
+                    <form class="create-form">
+                        <div class="form-group">
+                            <label for="burger">What kind of burger would you like?</label>
+                            <input type="text" class="form-control" id="burger-order">
+                        </div>
+                        <buton class="btn btn-primary" type="submit">Place Order</buton>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border border-light">
+                <div class="card-header bg-primary">
+                    Ordered Burgers
+                </div>
+                <div class="card-body">
+                    {{#each burgers}}
+                      {{#unless devoured}}
+                        {{> burgers/burger-block devour=false }}
+                      {{/unless}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card border border-light">
+                <div class="card-header">
+                    Burgers that have been devoured!
+                </div>
+                <div class="card-body">
+                    {{#each burgers}}
+                      {{#if devoured}}
+                        {{> burgers/burger-devoured devour=true}}
+                      {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
