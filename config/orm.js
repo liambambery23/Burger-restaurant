@@ -26,6 +26,7 @@ function printQuestionMarks(num) {
         arr.push(key + "=" + value);
       }
     }
+    return arr.toString();
 };
 
 let orm = {
@@ -78,8 +79,8 @@ let orm = {
       },
 
       delete: function(table, condition, cb) {
-        let querystring = "DELETE FROM " + table;
-        querystring += " WHERE ";
+        let queryString = "DELETE FROM " + table;
+        queryString += " WHERE ";
         queryString += condition;
 
         connection.query(queryString, function(err, result) {

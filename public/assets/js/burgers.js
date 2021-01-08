@@ -1,13 +1,14 @@
 $(function() {
-    $(".create.form").on("submit", function(event) {
+    $(".create-form").on("submit", function(event) {
         event.preventDefault();
+        console.log("submit works");
 
         let newBurger = {
             burger_name: $("#burger-order").val().trim(),
             devoured: 0
         };
 
-        $.ajax("api/burgers", {
+        $.ajax("/api/burgers", {
             type: "POST",
             data: newBurger
         }).then(
@@ -26,7 +27,7 @@ $(function() {
             devoured: true
         };
 
-        $.ajax("api/burgers/" + id, {
+        $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newDevourState
         }).then(
