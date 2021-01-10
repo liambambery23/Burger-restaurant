@@ -1,0 +1,31 @@
+body {
+    background-color: #FA7921;
+}
+
+.create-form {
+    padding-bottom: 20px;
+}
+
+.order-form {
+    padding: 15px;
+}
+
+.card-body {
+    background-color: lightgray;
+}
+
+/* .ordered-burgers {
+    background-color: #9BC53D;
+} */
+
+.burger {
+    padding: 20px;
+}
+
+.card-header {
+    padding: 10px;
+}
+
+.border {
+    border-radius: 20px !important;
+}
