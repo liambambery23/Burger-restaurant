@@ -1,6 +1,6 @@
 # burger
 
-This application allows the user to enter the name of a burger that they would like to eat and then they can "Devour it" by clicking a button. Once a burger has been devoured the user can "Clean Plate" to remove the burger from the application. 
+This application allows the user to enter the name of a burger that they would like to eat and then they can "Devour it" by clicking a button. Once a burger has been devoured the user can "Clean Plate" to remove the burger from the application. The application can be accessed [HERE](https://blooming-savannah-63278.herokuapp.com/).
 
 ## Motivation
 This application was created to showcase my knowledge of creating a using MySQL databases.
