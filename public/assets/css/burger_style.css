@@ -1,7 +1,13 @@
 body {
     background-color: #FA7921;
+    background-image: url("/assets/img/burger.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .create-form {
     padding-bottom: 20px;
 }
@@ -14,10 +20,18 @@ body {
     background-color: lightgray;
 }
 
-/* .ordered-burgers {
-    background-color: #9BC53D;
-} */
+.card-header {
+    border-bottom: 1px outset white;
+}
 
+.card {
+    border-radius: 25px !important;
+}
+
+.jumbotron {
+    background-color: lightgray;
+    
+}
 .burger {
     padding: 20px;
 }
@@ -26,6 +40,3 @@ body {
     padding: 10px;
 }
 
-.border {
-    border-radius: 20px !important;
-}
