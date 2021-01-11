@@ -7,7 +7,7 @@ This application was created to showcase my knowledge of creating a using MySQL 
 
  
 ## Screenshots
-Include logo/demo screenshot etc.
+![screenshot](./public/assets/img/Screenshot.png)
 
 ## Tech/framework used
 Bootstrap
